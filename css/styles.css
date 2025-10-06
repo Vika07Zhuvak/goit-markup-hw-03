@@ -51,14 +51,12 @@ a {
     display: flex;
     align-items: center;
     gap: 40px;
-    /* ✅ для меню */
 }
 
 .contacts-list {
     display: flex;
     align-items: center;
     gap: 40px;
-    /* ✅ для контактів */
 }
 
 .header-logo {
@@ -78,6 +76,39 @@ a {
 
 .header-logo .logo-part {
     color: #2e2f42;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding: 24px 0 24px 0;
+    /* ✅ повна форма */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #404bbf;
+}
+
+.contacts {
+    font-style: normal;
+    margin-left: auto;
+}
+
+.contacts-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    padding: 24px 0;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: #404bbf;
 }
 
 /* HERO */
@@ -131,10 +162,12 @@ a {
     width: 1px;
     height: 1px;
     margin: -1px;
-    border: 0;
     padding: 0;
-    clip: rect(0 0 0 0);
     overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    border: 0;
+    white-space: nowrap;
 }
 
 .features-list {
@@ -142,7 +175,6 @@ a {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
-    /* ✅ вертикальні відступи */
     justify-content: center;
 }
 
@@ -186,14 +218,16 @@ a {
 .team-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 24px;
-    /* ✅ для команди */
+    row-gap: 48px;
 }
 
 .team-item {
     background-color: #fff;
     border-radius: 0 0 4px 4px;
-    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
+    box-shadow:
+        0 2px 1px rgba(46, 47, 66, 0.08),
         0 1px 1px rgba(46, 47, 66, 0.16),
         0 1px 6px rgba(46, 47, 66, 0.08);
     width: 264px;
@@ -249,7 +283,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    /* ✅ для портфоліо */
 }
 
 .portfolio-item {
