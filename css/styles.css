@@ -172,12 +172,14 @@ a {
     white-space: nowrap;
 }
 
+/* ✅ Виправлено: заміна gap на margin-right */
 .features-list {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
     justify-content: center;
+}
+
+.features-item:not(:last-child) {
+    margin-right: 24px;
 }
 
 .features-item {
@@ -216,12 +218,11 @@ a {
     color: #2e2f42;
 }
 
+/* ✅ Виправлено: заміна gap на margin */
 .team-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 24px;
-    row-gap: 48px;
 }
 
 .team-item {
@@ -232,6 +233,16 @@ a {
         0 1px 1px rgba(46, 47, 66, 0.16),
         0 1px 6px rgba(46, 47, 66, 0.08);
     width: 264px;
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+.team-item:nth-child(4n) {
+    margin-right: 0;
+}
+
+.team-item:nth-last-child(-n+4) {
+    margin-bottom: 0;
 }
 
 .team-photo {
@@ -279,16 +290,24 @@ a {
     color: #2e2f42;
 }
 
+/* ✅ Виправлено: заміна gap на margin */
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
 }
 
 .portfolio-item {
     width: calc((100% - 48px) / 3);
     background-color: #fff;
     transition: box-shadow 0.3s ease;
+}
+
+.portfolio-item:not(:nth-child(3n)) {
+    margin-right: 24px;
+}
+
+.portfolio-item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 48px;
 }
 
 .portfolio-item:hover {
