@@ -1,7 +1,9 @@
+/* RESET & BASE */
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #fff;
+    margin: 0;
 }
 
 ul,
@@ -84,8 +86,8 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding: 24px 0 24px 0;
-    /* ✅ повна форма */
+    padding: 24px 0;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover,
@@ -104,6 +106,7 @@ a {
     letter-spacing: 0.02em;
     color: #434455;
     padding: 24px 0;
+    transition: color 0.3s ease;
 }
 
 .contacts-link:hover,
@@ -114,8 +117,7 @@ a {
 /* HERO */
 .hero {
     background-color: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding: 188px 0;
     text-align: center;
 }
 
@@ -134,7 +136,7 @@ a {
     min-width: 169px;
     height: 56px;
     margin: 0 auto;
-    background: #4d5ae5;
+    background-color: #4d5ae5;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -144,17 +146,17 @@ a {
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    background: #404bbf;
+    background-color: #404bbf;
 }
 
 /* FEATURES */
 .features {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 .visually-hidden {
@@ -201,8 +203,7 @@ a {
 /* TEAM */
 .team {
     background-color: #f4f4fd;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 .team-title {
@@ -265,8 +266,7 @@ a {
 /* PORTFOLIO */
 .portfolio {
     background-color: #fff;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
 }
 
 .portfolio-title {
@@ -326,8 +326,7 @@ a {
 /* FOOTER */
 .page-footer {
     background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .footer-logo {
@@ -339,6 +338,7 @@ a {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .footer-logo .logo-part {
