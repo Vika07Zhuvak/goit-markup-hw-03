@@ -26,28 +26,6 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* header style */
-
 .page-header{
     border-bottom: 1px solid #e7e9fc;
 }
@@ -93,15 +71,15 @@ a {
 .header-logo .logo-part {
     color: #2e2f42;
 }
-
 .nav-link {
+    display: block;
+    padding: 24px 0;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding: 20px;
     display: block;
 }
 
@@ -139,42 +117,42 @@ a {
 
 
 
-
-
-
-
-/* section hero */
-
 .hero {
     background-color: #2e2f42;
-    padding-top: 188px;
-    padding-bottom: 292px;
+    padding: 188px 0 292px 0;
     text-align: center;
+    
 }
 
 .hero-title {
-    max-width: 496px;
-    margin: 0 auto 48px;
-    font-size: 56px;
     font-weight: 700;
+    font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #fff;
+    max-width: 496px;
+    margin: 0 auto 48px auto;
+    
+
 }
 
 .hero-button {
     background: #4d5ae5;
     color: #fff;
     border: none;
-    padding: 16px 32px;
+    padding: 12px 24px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    letter-spacing: 0.04em;
     border-radius: 4px;
     cursor: pointer;
+    
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
     background: #404bbf;
 }
 
@@ -186,17 +164,10 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+ .features{
+    margin-top: 120px;
+    padding-bottom: 120px;
+ }
 
 
 .features-subtitle {
@@ -205,7 +176,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin: 0 0 8px;
+    margin-bottom: 8px;
 }
 
 .features-text {
@@ -213,34 +184,17 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    
 }
 
 .features-item {
     background-color: #FFFFFF;
-    
-    
-    
-}
-
-.container-features{
-    display: flex;
-    align-items: center;
+    width: 264px;
 }
 
 .features-list{
     display: flex;
-    align-items: center;
     gap: 24px;
-    padding: 120px 0;
-    width: calc((100%-72px)/4);
-}
-.
-
-.features-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    justify-items: center;
 }
 
 
@@ -257,69 +211,80 @@ a {
 
 
 .team {
-    background: #f4f4fd;
-    padding: 120px 0;
+    background-color: #f4f4fd;
 }
 
+
 .team-title {
+    padding-top: 120px;
+    margin: 0 auto 72px;
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
-    margin-bottom: 72px;
 }
+
 
 .team-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 24px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    padding-bottom: 120px;
 }
 
+
 .team-item {
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 1px 3px rgba(0, 0, 0, 0.12);
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow:
+        0 2px 1px rgba(46, 47, 66, 0.08),
+        0 1px 1px rgba(46, 47, 66, 0.16),
+        0 1px 6px rgba(46, 47, 66, 0.08);
+    width: 264px;
+    height: 380px;
+    padding-bottom: 32px;
     transition: all 0.3s ease;
 }
+
 
 .team-item:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transform: translateY(-5px);
 }
 
+
+.team-photo {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
 .team-name {
+    margin: 32px 24px 8px 24px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    margin: 32px 0 8px;
 }
 
+
 .team-position {
+    margin: 0 24px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
-    margin: 0 0 32px;
 }
-
-
-
-
-
-
 
 
 
@@ -340,11 +305,26 @@ a {
 
 .page-footer {
     background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
+.page-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 .footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: #4d5ae5;
+    text-decoration: none;
+    margin-bottom: 16px;
 }
 
 .footer-logo .logo-part {
@@ -352,23 +332,12 @@ a {
 }
 
 .footer-text {
+    width: 264px;
+    margin: 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--footer-text-color, #F4F4FD);
+    color: #f4f4fd;
 }
-
-
-.footer-container {
-    display: flex;
-    align-items: start;
-}
-
-
-
-
-
-
-
 
 
 
@@ -381,44 +350,58 @@ a {
 
 
 .portfolio {
-    padding: 120px 0;
+    background-color: #fff;
 }
 
 .portfolio-title {
+    padding-top: 120px;
+    margin: 0 auto 72px;
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
-    margin-bottom: 72px;
 }
 
 .portfolio-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 48px 24px;
-    /* 48px по вертикалі, 24px по горизонталі */
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 120px;
 }
 
 .portfolio-item {
-    background: #fff;
-    border: 1px solid #e7e9fc;
+    width: calc((100% - 48px) / 3);
+    background-color: #fff;
     transition: box-shadow 0.3s ease;
 }
 
 .portfolio-item:hover {
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 8px rgba(46, 47, 66, 0.1);
 }
 
-.portfolio-card {
-    padding: 32px 16px;
+.portfolio-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.portfolio-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding-block: 32px;
+    padding-inline: 16px;
+    width: 360px;
+    height: 120px;
 }
 
 .portfolio-name {
@@ -427,7 +410,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin: 0 0 8px;
+    margin: 0;
 }
 
 .portfolio-category {
