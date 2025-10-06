@@ -50,15 +50,15 @@ a {
 .nav-list {
     display: flex;
     align-items: center;
-    gap: 24px;
-    /* ✅ вимога gap: 24px */
+    gap: 40px;
+    /* ✅ для меню */
 }
 
 .contacts-list {
     display: flex;
     align-items: center;
-    gap: 24px;
-    /* ✅ вимога gap: 24px */
+    gap: 40px;
+    /* ✅ для контактів */
 }
 
 .header-logo {
@@ -78,38 +78,6 @@ a {
 
 .header-logo .logo-part {
     color: #2e2f42;
-}
-
-.nav-link {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    padding: 24px 0;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    color: #404bbf;
-}
-
-.contacts {
-    font-style: normal;
-    margin-left: auto;
-}
-
-.contacts-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    padding: 24px 0;
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-    color: #404bbf;
 }
 
 /* HERO */
@@ -219,14 +187,13 @@ a {
     display: flex;
     justify-content: center;
     gap: 24px;
-    /* ✅ відступи між елементами */
+    /* ✅ для команди */
 }
 
 .team-item {
     background-color: #fff;
     border-radius: 0 0 4px 4px;
-    box-shadow:
-        0 2px 1px rgba(46, 47, 66, 0.08),
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
         0 1px 1px rgba(46, 47, 66, 0.16),
         0 1px 6px rgba(46, 47, 66, 0.08);
     width: 264px;
@@ -282,7 +249,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    /* ✅ горизонтальні + вертикальні відступи */
+    /* ✅ для портфоліо */
 }
 
 .portfolio-item {
